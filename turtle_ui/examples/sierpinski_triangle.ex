@@ -3,7 +3,7 @@ defmodule TurtleUI.Examples.SierpinskiTriangle do
   Draw a fractal triangle
 
   ## Examples
-  
+
       iex> pen_up
       :ok
       iex> go_to -300, 250
@@ -17,6 +17,13 @@ defmodule TurtleUI.Examples.SierpinskiTriangle do
   """
 
   import TurtleUI
+
+  def example do
+    pen_up()
+    go_to(-300, 250)
+    pen_down()
+    run(500, 7)
+  end
 
   def run(length, depth) do
     sierpinski_triangle(length, depth)

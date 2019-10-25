@@ -6,6 +6,14 @@ defmodule TurtleUI.Examples.Tree do
   """
   import TurtleUI
 
+  def example do
+    right(90)
+    pen_up()
+    backward(200)
+    pen_down()
+    run()
+  end
+
   def run do
     branch(150, 0.7, 30, 5)
   end

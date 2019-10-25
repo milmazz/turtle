@@ -7,8 +7,8 @@ defmodule TurtleUI.Examples.Pentagram do
 
   def run do
     repeat 5 do
-      forward 150
-      right 144
+      forward(150)
+      right(144)
     end
   end
 end

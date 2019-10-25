@@ -11,14 +11,14 @@ defmodule TurtleUI.Examples.Flower do
 
   defp square do
     repeat 4 do
-      forward 100
-      right 90
+      forward(100)
+      right(90)
     end
   end
 
   defp flower do
     repeat 36 do
-      right 10
+      right(10)
       square()
     end
   end

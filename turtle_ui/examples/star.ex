@@ -9,8 +9,8 @@ defmodule TurtleUI.Examples.Star do
 
   def run do
     repeat 36 do
-      fd 200
-      rt -170
+      fd(200)
+      rt(-170)
     end
   end
 end
