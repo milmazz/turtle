@@ -23,7 +23,7 @@ $ iex -S mix
 And then, inside IEx you can do:
 
 ```elixir
-iex(1)> c "turtle_ui/examples/tree.ex"
+iex(1)> c "examples/tree.ex"
 iex(2)> TurtleUI.pen_down()
 :ok
 iex(3)> TurtleUI.Examples.Tree.example()
@@ -34,7 +34,7 @@ See the result on Scenic. If you want to run another example, you first need to
 clean your view and then execute the next example like this:
 
 ```elixir
-iex(4)> c "turtle_ui/examples/sierpinski_triangle.ex"
+iex(4)> c "examples/sierpinski_triangle.ex"
 iex(5)> TurtleUI.reset()
 :ok
 iex(6)> TurtleUI.Examples.SierpinskiTriangle.example()
