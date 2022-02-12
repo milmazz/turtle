@@ -23,7 +23,7 @@ $ iex -S mix
 And then, inside IEx you can do:
 
 ```iex
-iex(1)> for file <- Path.wildcard("examples/*.ex"), do: Code.compile_file(file)
+iex(1)> c "turtle_ui/examples/tree.ex"
 iex(2)> TurtleUI.pen_down()
 :ok
 iex(3)> TurtleUI.Examples.Tree.example()
@@ -34,10 +34,17 @@ See the result on Scenic. If you want to run another example, you first need to
 clean your view and then execute the next example like this:
 
 ```iex
-iex(8)> TurtleUI.reset()
+iex(4)> c "turtle_ui/examples/sierpinski_triangle.ex"
+iex(5)> TurtleUI.reset()
 :ok
-iex(9)> TurtleUI.Examples.SierpinskiTriangle.example()
+iex(6)> TurtleUI.Examples.SierpinskiTriangle.example()
 :ok
+```
+
+You can also opt to compile all the example at once by doing something like:
+
+```iex
+iex(7)> for file <- Path.wildcard("examples/*.ex"), do: Code.compile_file(file)
 ```
 
 In the directory `turtle_ui/examples` you can find more examples, here I show you some of them:
