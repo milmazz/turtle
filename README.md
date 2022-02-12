@@ -1,6 +1,44 @@
 # Turtle
 
-**TODO: Add description**
+Turtle Graphics is a popular way to teach programming, particularly for kids. It
+was initially part of the Logo programming language, created by Wally Feurzing
+and Seymour Papert in 1966. Imagine a robotic turtle that starts in `{0,0}` on
+the cartesian plane. After importing the `Turtle` module, you would be able to
+use `IEx` (the interactive shell for Elixir) to send commands like `forward(15)`
+and get the turtle to advance 15 pixels forward, drawing a line while moving.
+You can draw pretty complex figures and
+pictures by combining that with other commands.
+
+This repository includes an experimental Elixir implementation about the
+previous ideas, it should allow users to do all that using the Scenic
+framework.
+
+## How to run the examples
+
+```console
+$ cd turtle_ui
+$ iex -S mix
+```
+
+And then, inside IEx you can do:
+
+```iex
+iex(1)> for file <- Path.wildcard("examples/*.ex"), do: Code.compile_file(file)
+iex(2)> TurtleUI.pen_down()
+:ok
+iex(3)> TurtleUI.Examples.Tree.example()
+:ok
+```
+
+See the result on Scenic. If you want to run another example, you first need to
+clean your view and then execute the next example like this:
+
+```iex
+iex(8)> TurtleUI.reset()
+:ok
+iex(9)> TurtleUI.Examples.SierpinskiTriangle.example()
+:ok
+```
 
 ## TODO
 
