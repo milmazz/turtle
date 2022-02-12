@@ -40,6 +40,16 @@ iex(9)> TurtleUI.Examples.SierpinskiTriangle.example()
 :ok
 ```
 
+In the directory `turtle_ui/examples` you can find more examples, here I show you some of them:
+
+![flower](./turtle_ui/examples/flower.png)
+
+![triangle](./turtle_ui/examples/sierpinski_triangle.png)
+
+![spiral](./turtle_ui/examples/spiral.png)
+
+![star](./turtle_ui/examples/star.png)
+
 ## TODO
 
 ### Turtle Motion
