@@ -41,7 +41,7 @@ iex(6)> TurtleUI.Examples.SierpinskiTriangle.example()
 :ok
 ```
 
-You can also opt to compile all the example at once by doing something like:
+You can also opt to compile all the examples at once by doing something like:
 
 ```iex
 iex(7)> for file <- Path.wildcard("examples/*.ex"), do: Code.compile_file(file)
