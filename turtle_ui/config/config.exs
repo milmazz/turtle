@@ -1,6 +1,6 @@
 # This file is responsible for configuring your application
 # and its dependencies with the aid of the Mix.Config module.
-use Mix.Config
+import Config
 
 # Configure the main viewport for the Scenic application
 config :turtle_ui, :viewport, %{
